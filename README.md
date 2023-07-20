@@ -3,7 +3,7 @@ Study basic server web development
 Servlet과 JSP 활용에 대한 내용이며 3개의 프로젝트로 구성되어 있다.
 
 ---
-## 1_Servlet
+## 01_Servlet
 ![Servlet](./image/servlet.png)  
 ### Servlet
 Servlet은 자바를 기반으로 하는 웹 애플리케이션에서 동작하는 서버 사이드 컴포넌트이다. 웹 서버와 웹 애플리케이션 서버(예: Apache Tomcat, Jetty)와 같은 서블릿 컨테이너 내에서 실행되며,  
