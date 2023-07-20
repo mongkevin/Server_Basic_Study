@@ -365,7 +365,7 @@ HttpServletRequest 객체와 HttpServletResponse 객체
 -request : 서버로 요청할 때의 정보들이 담겨있다 (요청시 전달값, 요청 전송 방식 등등)  
 -response : 요청에 대해 응답에 필요한 객체  
 
-**doGet()과 doPost()차이점**
+**doGet()과 doPost()차이점**  
 doGet()과 doPost()은 Java Servlet에서 HTTP GET과 POST 요청을 처리하기 위해 사용되는 두 가지 메서드입니다. 이 두 메서드는 서버 측에서 클라이언트의 요청을 처리하는데 사용되며, 
 주요한 차이점은 다음과 같다:  
 
@@ -386,7 +386,7 @@ doGet()과 doPost()은 Java Servlet에서 HTTP GET과 POST 요청을 처리하�
 두 메서드는 각각 GET과 POST 요청에 대해 적절한 역할을 수행하기 위해 사용되며, 개발자는 요청의 종류와 필요에 따라 적절한 메서드를 오버라이딩하여 요청을 처리하면 된다. Java Servlet  
 에서는 doGet()과 doPost() 외에도 doPut(), doDelete() 등의 메서드도 제공되며, 이들을 활용하여 다양한 HTTP 요청을 처리할 수 있다.  
 
-**데이터 전달하기**
+**데이터 전달하기**  
 응답페이지에 전달할 값이 있다면 값을 어딘가엔 담아서 전달해야한다. (이때 담아줄수있는 내장객체 4가지)  
 -servlet scope  
 1)application : application에 담은 데이터는 웹 애플리케이션 전역에서 꺼내쓸수 있다.  
@@ -402,9 +402,9 @@ doGet()과 doPost()은 Java Servlet에서 HTTP GET과 POST 요청을 처리하�
 데이터를 지우고자 한다면  
 -removeAttribute("키");  
 
-**응답하기**
-답 방식 2가지
-1.위임 (포워딩) - 요청을 유지한채로 위임하는 방법 (url에 기존 주소가 남아있음)  
+**응답하기**  
+응답 방식 2가지   
+1.위임 (포워딩) - 요청을 유지한채로 위임하는 방법 (url에 기존 주소가 남아있음)    
 RequestDispatcher view = request.getRequestDispatcher("응답페이지경로");  
 view.forward(request, response);  
 			
