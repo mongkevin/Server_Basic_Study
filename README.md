@@ -133,8 +133,9 @@ request 객체의 parameter영역 안에 존재한다. (key-value의 형태로 �
 request.getParameter("키값"): (반환타입: String): 무조건 문자열 형으로 반환되기 때문에
 												      필요에 의해 형변환을 하여야한다.
 request.getParameterValues("키값"): 반환타입: String[] 
-							-하나의 key값으로 여러개의 value값을 받을 경우 문자열배 형태로 반환받는다.
-**Servlet**
+							-하나의 key값으로 여러개의 value값을 받을 경우 문자열배 형태로 반환받는다. 
+       
+**Servlet**  
 ```java
 protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     //무조건 문자열로 넘어오기 때문에 해당 자료형으로 파싱해야한다.
